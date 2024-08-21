@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jobs</title>
+</head>
+<style>
+.res{
+font-size: 20px;
+font-weight: bold;
+}
+</style>
+<body style="background-color: rgb(120, 168, 168);">
+<h1>Job Recommendations</h1>
+<ul>
+{% for job in jobs %}
+<li class="res">
+<strong>Title:</strong> {{ job.title }}<br>
+<strong>Company:</strong> {{ job.company }}<br>
+<strong>Location:</strong> {{ job.location }}
+</li>
+{% endfor %}
+</ul>
+</body>
+</html>
